@@ -5,4 +5,4 @@
   tasks:
     - name: Hello
       debug:
-        msg: "This is project 1 deployment, "
+        msg: "This is project 1 deployment - "
