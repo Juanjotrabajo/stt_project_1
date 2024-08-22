@@ -2,7 +2,15 @@
   hosts: dune1
   become: yes
 
+  roles:
+    - service_A
+
+
+
   tasks:
     - name: Hello
       debug:
         msg: "This is project 1 deployment - "
+    - import_role:
+        name: service_A
+        tasks_from: main.yml
