@@ -1,0 +1,5 @@
+---
+# tasks file for commonRole_B
+- name: commonRole_B
+  debug:
+    msg: "This is commonRole_B v12.0 - no Cyber code here"
