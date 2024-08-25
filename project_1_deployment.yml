@@ -1,11 +1,17 @@
-- hosts: dune1
+- hosts: all
   tasks: 
     - name: debug
       debug:
         msg: "This is project_1 main deployment playbook; change for tag 1.0"
 
-- hosts: dune1
+- hosts: all
   tasks:
   - import_role:
       name: service_A
+      tasks_from: main.yml
+
+- hosts: all
+  tasks:
+  - import_role:
+      name: service_B
       tasks_from: main.yml
