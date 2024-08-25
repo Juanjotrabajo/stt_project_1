@@ -2,7 +2,7 @@
   tasks: 
     - name: debug
       debug:
-        msg: "This is project_1 main deployment playbook"
+        msg: "This is project_1 main deployment playbook; change for tag 1.0"
 
 - hosts: dune1
   tasks:
